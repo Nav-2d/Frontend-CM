@@ -1,10 +1,26 @@
+@font-face {
+  font-family: "Gibson-HI";
+  src: url("../gibson/Gibson-BoldItalic.ttf") format("truetype"),
+}
+
+@font-face {
+  font-family: "Gibson-Medium";
+  src: url("../gibson/Gibson-Regular.ttf") format("truetype"),
+}
+
+@font-face {
+  font-family: "Gibson-Light";
+  src: url("../gibson/Gibson-Light.ttf") format("truetype"),
+}
+
+
 * {
   box-sizing: border-box;
 }
 
 html,
 body {
-  font-family: "Aller", Arial, Helvetica, sans-serif;
+  font-family: "Gibson", Arial, Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 400;
   background-color: #e4f5e7;
