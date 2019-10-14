@@ -20,7 +20,7 @@
 
 html,
 body {
-  font-family: "Gibson", Arial, Helvetica, sans-serif;
+  font-family: "Gibson-Medium", Arial, Helvetica, sans-serif;
   font-size: 15px;
   font-weight: 400;
   background-color: #e4f5e7;
@@ -107,4 +107,14 @@ section.login {
 
 .printers .card-body .card-title {
     font-weight: bold;
+}
+
+.printer {
+  background: white;
+  border: 2px solid black;
+  padding: 40px 20px 0px;
+}
+
+.padding-b {
+  padding-bottom: 120px;
 }
