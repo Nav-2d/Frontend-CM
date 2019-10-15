@@ -13,9 +13,9 @@
     <link href="./css/style.css" rel="stylesheet">
 </head>
 
-<body>
-    <div class="header">
-        <div class="container">
+<body background="./assests/print_background.png">
+    <div class="container">
+        <section class="header">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand" href="#">Machine Intentionality</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -23,109 +23,176 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="./about.html">About <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Print</a>
+                            <a class="nav-link" href="./print.html">Print</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Gallery</a>
+                            <a class="nav-link" href="./gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./signup.html">Signup</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-        </div>
-    </div>
-    <section class="login">
-        <div class="container">
-            <div class="login-style">
-                <button type="button" class="btn btn-outline-secondary">Log In</button>
+        </section>
+
+        <section class="login-section padding-b">
+            <div class="login">
+                <button class="btn btn-primary" type="submit">Log In</button>
                 <span>Welcome Back, Navdeep!</span>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <div class="container padding-b">
-        <section class="printers">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="card text-center" style="width: 18rem;">
-                        <img class="card-img-top" src="./assests/VERDHAAN.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">the sparse printer</h5>
-                            <p class="card-text">redistributes filament across</br>volume and copies</p>
+        <section class="printers-section padding-b">
+            <div class="printers">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="card text-center">
+                            <div class="px-4 py-4">
+                                <img class="card-img-top" src="./assests/sparse_300ppi.png" alt="Card image cap">
+                            </div>
+                            <div class="px-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">the sparse printer</h5>
+                                    <p class="card-text">redistributes filament across volume and copies</p>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="card text-center" style="width: 18rem;">
-                        <img class="card-img-top" src="./assests/VERDHAAN.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">the dwindling printer</h5>
-                            <p class="card-text">reduces speed each layer</br>it prints</p>
+                    <div class="col-lg-3">
+                        <div class="card text-center">
+                            <div class="px-4 py-4">
+                                <img class="card-img-top" src="./assests/dwindling_300ppi.png" alt="Card image cap">
+                            </div>
+                            <div class="px-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">the dwindling printer</h5>
+                                    <p class="card-text">reduces speed each layer it prints</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="card text-center" style="width: 18rem;">
-                        <img class="card-img-top" src="./assests/VERDHAAN.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">the parcel printer</h5>
-                            <p class="card-text">reshapes your print to its</br>closest shipping convenience</p>
+                    <div class="col-lg-3">
+                        <div class="card text-center">
+                            <div class="px-4 py-4">
+                                <img class="card-img-top" src="./assests/parcel_300ppi.png" alt="Card image cap">
+                            </div>
+                            <div class="px-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">the parcel printer</h5>
+                                    <p class="card-text">reshapes your print to its closest shipping convenience</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="card text-center" style="width: 18rem;">
-                        <img class="card-img-top" src="./assests/VERDHAAN.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">the breezy printer</h5>
-                            <p class="card-text">re-directs its nozzle based on</br>your local wind data.</p>
+                    <div class="col-lg-3">
+                        <div class="card text-center">
+                            <div class="px-4 py-4">
+                                <img class="card-img-top" src="./assests/breezy_300ppi.png" alt="Card image cap">
+                            </div>
+                            <div class="px-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">the breezy printer</h5>
+                                    <p class="card-text">re-directs its nozzle based on your local wind data.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
 
-    <div class="container padding-b ">
-        <section class="printer">
-            <div class="row">
+        <section class="printer-section padding-b">
+            <div class="printer">
+                <div class="row">
                     <div class="col-lg-4">
-                        <div class="col-12">
-                            <div class="card" style="width: 15rem;">
-                                <button type="button" class="btn btn-outline-secondary">Log In</button>
+                        <div class="col-12 text-center">
+                            <div class="your-printer-label-style">
+                                Your Printer
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="card" style="width: 15rem;">
-                                <img class="card-img-top" src="./assests/VERDHAAN.png" alt="Card image cap">
+                            <div class="card text-center">
+                                <div class="py-4">
+                                    <img class="card-img-top" src="./assests/breezy_300ppi.png" alt="Card image cap">
+                                </div>
+                                <div class="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">the breezy printer</h5>
+                                        <p class="card-text">re-directs its nozzle based on your local wind data.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                </div>
-                <div class="col-lg-8">
-                    <p style="margin: 0 0 30px 0;" class="location-text">Lorem ipsum dolor sit amet, consectetuer
-                        adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                        Duis
-                        autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
-                        dolore
-                        eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
-                        luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-                        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim </p>
-                    </p>
+                    </div>
+                    <div class="col-lg-8">
+                        <p style="margin-top: 50px;" class="location-text">Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                            nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            Duis
+                            autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                            illum
+                            dolore
+                            eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+                            praesent
+                            luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                            Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim </p>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
+        <section class="submission-section padding-b">
+            <div class="submission">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button class="btn btn-primary" type="submit">Submit File Round 1</button>
+                    <button class="btn btn-primary" type="submit">Submit File Round 2</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="tracking-section padding-b">
+            <div class="row">
+                <div class="col-3 text-center">
+                    <div class="track-label-style">
+                        Track your print
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="tracking">
+                        <ul class="progressbar">
+                            <li class="active">we have received
+                                your file</li>
+                            <li>your file is currently
+                                printing at our
+                                [Vancouver/Toronto]
+                                location</li>
+                            <li>your print is done!
+                                we are preparing
+                                your shipment.</li>
+                            <li>your print is on its
+                                way to you.
+                                track it here.</li>
+                            <li>your print was
+                                delivered!.</li>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </div>
-
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
