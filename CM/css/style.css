@@ -126,6 +126,19 @@ p.stand-out {
   font-weight: bold;
 } */
 
+.bg-logo {
+  width: 50%;
+  padding: 10px 20px;
+  position: relative;
+  clip-path: polygon(96% 0, 100% 26%, 100% 100%, 0 100%, 0 0);
+}
+.bg-logo:after{
+  clip-path: polygon(96% 0, 100% 26%, 100% 100%, 0 100%, 0 0);
+  content: "";
+  position: absolute;
+  background: #fff;
+  z-index: -1;
+}
 .printers .card {
   /* background: linear-gradient(235deg, transparent 15px, #fff 10px, #fff 100%);
   border: none; */

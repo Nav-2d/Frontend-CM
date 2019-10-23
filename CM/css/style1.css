@@ -1,0 +1,170 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  font-size: 13px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+}
+
+input,
+button {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  font-size: 13px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.img {
+  max-width: 100%;
+}
+
+:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.inner-login {
+  background: #fff;
+  min-width: 650px;
+  margin: auto;
+  display: flex;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.inner-signup {
+  background: #fff;
+  min-width: 650px;
+  margin: auto;
+  display: flex;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.inner-login .form-left {
+  width: 45%;
+  background: #B88F71;
+}
+
+.inner-signup .form-left {
+  width: 45%;
+  background: #f3914e;
+}
+
+.inner-signup form {
+  width: 55%;
+  padding: 36px;
+}
+
+.inner-login form {
+  width: 55%;
+  padding: 36px;
+}
+
+.inner-login h3,
+.inner-signup h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 28px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.form-control {
+  border: 1px solid #333;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  height: 30px;
+}
+
+.form-control:focus,
+.form-control:active {
+  outline: none;
+  box-shadow: none;
+  border-color: #333;
+}
+
+.form-control::-webkit-input-placeholder {
+  font-size: 13px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+}
+.form-control::-moz-placeholder {
+  font-size: 13px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+}
+.form-control:-ms-input-placeholder {
+  font-size: 13px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+}
+.form-control:-moz-placeholder {
+  font-size: 13px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  border: none;
+  width: 100px;
+  height: 40px;
+  margin: auto;
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+  background: #333;
+  color: #fff;
+  font-size: 15px;
+}
+
+@media (max-width: 767px) {
+  .inner-login,
+  .inner-signup {
+    display: block;
+    min-width: 0;
+  }
+  .inner-signup .form-left {
+    width: 100%;
+  }
+  .inner-login .form-left {
+    width: 100%;
+  }
+  .inner-signup form {
+    width: 100%;
+  }
+  .inner-login form {
+    width: 100%;
+  }
+}
+

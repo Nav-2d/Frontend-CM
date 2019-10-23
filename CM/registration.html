@@ -16,22 +16,28 @@
 
 <body>
     <div class="wrapper">
-        <div class="inner-login">
+        <div class="inner-signup">
             <div class="form-left"></div>
             <form>
-                <h3>Login</h3>
+                <h3>Sign Up Form</h3>
                 <div class="form-group">
-                    <input type="email" class="form-control" id="email" name:"email" placeholder="Email" required>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" name:"email" placeholder="Enter email" required>
                 </div>
                 <div class="form-group">
                     <input type="password" class="form-control" id="password" name="password" placeholder="Password"
                         required>
                 </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="confirmPassword" name="confirmPassword"
+                        placeholder="Confirm Password" required>
+                </div>
                 <button type="submit">Submit</button>
             </form>
         </div>
     </div>
-
     <script src="./js/script.js"></script>
 </body>
 
