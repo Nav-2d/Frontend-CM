@@ -193,11 +193,6 @@ div.em {
 }
 
 .locations .card {
-  /* background: linear-gradient(235deg, transparent 15px, #fff 10px, #fff 100%);
-  border: none; */
-
-  /* width: 18rem;
-  height: 15rem; */
   position: relative;
   clip-path: polygon(87% 0, 100% 18%, 100% 100%, 0 100%, 0 0);
 }
@@ -210,12 +205,158 @@ div.em {
   z-index: -1;
 }
 
-.card-deck {
+.locations .card-deck {
   flex-flow: column wrap;
 }
 
+/* Print Page */
+
+.login-section {
+  padding-top: 200px;
+}
+
+.login {
+  background: white;
+  border: 3px solid black;
+}
+
+.printers .card {
+  position: relative;
+  clip-path: polygon(91% 0, 100% 12%, 100% 100%, 0 100%, 0 0);
+  align-items: center;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.printers .card:after {
+  clip-path: polygon(91% 0, 100% 12%, 100% 100%, 0 100%, 0 0);
+  content: "";
+  position: absolute;
+  background: #fff;
+  z-index: -1;
+}
+
+.printers .card .card-img-top {
+  height: 30%;
+  width: 30%;
+}
+
+.card h5 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 0.8rem;
+}
+
+.printers .card:hover {
+  transition: all 0.5s ease;
+  transform: translateY(-10px) !important;
+}
+
+.printer {
+  background: white;
+  border: 3px solid black;
+}
+
+.printer .card {
+  position: relative;
+  clip-path: polygon(91% 0, 100% 12%, 100% 100%, 0 100%, 0 0);
+  align-items: center;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.printer .card:after {
+  clip-path: polygon(91% 0, 100% 12%, 100% 100%, 0 100%, 0 0);
+  content: "";
+  position: absolute;
+  background: #fff;
+  z-index: -1;
+}
+
+.printer .card .card-img-top {
+  height: 30%;
+  width: 30%;
+}
+
+.your-printer-label-style {
+  background-color: black;
+  color: white;
+  padding: 3px;
+  font-family: Gibson, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.printer p {
+  font-size: 0.9rem;
+}
+
+.submission {
+  background: white;
+  border: 3px solid black;
+}
+
+.file-btn {
+  color: #fff;
+  background: #000000;
+  border: none;
+  padding: 5px 20px;
+  margin-right: 20px;
+  font-family: Gibson, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Gallery Page */
+
+.gallery-section {
+  padding-top: 200px;
+}
+
+.gallery-box {
+  background: white;
+  /* border: 3px solid black; */
+  padding: 20px 20px;
+  margin: 0 auto;
+}
+
+.boxes {
+  display: inline-block;
+  width: 130px;
+  height: 140px;
+  border: 1px solid black;
+  margin: 7px;
+}
+/* 
+.gallery .nav-link.active {
+  background-color: #fff;
+  border-radius: 0;
+  margin-right: 20px;
+  padding: 8px 50px;
+  color: #000;
+  font-family: Gibson, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.gallery .nav-link {
+  margin-right: 20px;
+  background-color: #000;
+  border-radius: 0;
+  padding: 8px 50px;
+  color: #fff;
+  font-family: Gibson, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+} */
+
 @media (max-width: 992px) {
-  .card-deck {
+  .locations .card-deck {
     flex-flow: row wrap;
   }
 }
@@ -266,7 +407,67 @@ div.em {
     width: 30%;
   }
 
-  .card-deck {
+  .locations .card-deck {
     flex-flow: column wrap;
   }
+}
+
+.tracking {
+  background: white;
+  border: 3px solid black;
+  padding: 30px 20px 100px;
+}
+
+.progressbar li {
+  list-style-type: none;
+  width: 12%;
+  float: left;
+  font-size: 12px;
+  position: relative;
+  color: #7d7d7d;
+  margin-left: 60px;
+}
+.progressbar li:before {
+  width: 15px;
+  height: 15px;
+  content: "";
+  line-height: 30px;
+  border: 2px solid #7d7d7d;
+  display: block;
+  margin: 0 0 10px 0;
+  border-radius: 50%;
+  background-color: white;
+}
+.progressbar li:after {
+  width: 100%;
+  height: 2px;
+  content: "";
+  position: absolute;
+  background-color: #7d7d7d;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+.progressbar li:first-child:after {
+  content: none;
+}
+.progressbar li.active {
+  color: green;
+}
+.progressbar li.active:before {
+  border-color: #55b776;
+}
+.progressbar li.active + li:after {
+  background-color: #55b776;
+}
+
+.track-label-style {
+  background-color: black;
+  color: white;
+  padding: 3px;
+  font-family: Gibson, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  text-align: center;
 }
